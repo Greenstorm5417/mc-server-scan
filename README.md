@@ -6,6 +6,24 @@ that answer.
 
 ## Web UI (easiest)
 
+Pushes to `main` publish `ghcr.io/greenstorm5417/mc-server-scan:latest`
+via GitHub Actions. First pull may need a public package: GitHub →
+Packages → Package settings → Change visibility.
+
+```bash
+docker compose pull
+docker compose up
+```
+
+Or run the image directly:
+
+```bash
+docker run --rm -p 8080:8080 --cap-add NET_RAW --cap-add NET_ADMIN \
+  ghcr.io/greenstorm5417/mc-server-scan:latest
+```
+
+To build locally instead of pulling:
+
 ```bash
 docker compose up --build
 ```

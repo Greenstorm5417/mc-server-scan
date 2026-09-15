@@ -1,5 +1,6 @@
 services:
   mc-scan:
+    image: ghcr.io/greenstorm5417/mc-server-scan:latest
     build: .
     ports:
       - "8080:8080"
