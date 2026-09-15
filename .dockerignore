@@ -1,0 +1,8 @@
+target
+.git
+data
+servers.txt
+mc-scan.state
+mc-scan.state.tmp
+*.pcap
+**/*.rs.bk

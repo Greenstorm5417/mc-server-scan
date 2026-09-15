@@ -1,0 +1,14 @@
+services:
+  mc-scan:
+    build: .
+    ports:
+      - "8080:8080"
+    working_dir: /data
+    volumes:
+      - ./data:/data
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    # For SYN scan of the host's real NIC, also set:
+    # network_mode: host
+    # (then drop ports: — the UI is on the host's :8080)

@@ -1,0 +1,10 @@
+/target
+**/*.rs.bk
+.idea
+.vscode
+hits.txt
+servers.txt
+/data/
+*.pcap
+mc-scan.state
+mc-scan.state.tmp
